@@ -14,6 +14,31 @@
 #   "park_site_name"=>"227th St. Plgd"
 # }
 
+def address(recycling_info)
+  recycling_info["address"]
+end
+
+def borough(recycling_info)
+  recycling_info["borough"]
+end
+
+def all_keys(recycling_info)
+  recycling_info.each_key do |info|
+    puts info
+  end
+end
+
+def all_data(recycling_info)
+  recycling_info.each_value do |data|
+    puts data
+  end
+end
+
+def key_and_data(recycling_info)
+  recycling_info.each do |topic, data|
+    puts "The #{topic} is #{data}"
+  end
+end
 
 #1. Define a method `address`, that takes a hash as an argument.
 #This method should return the value of the address key in the hash.
